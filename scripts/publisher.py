@@ -160,7 +160,7 @@ def publisher():
 if __name__ == '__main__':
     global s, TCP_IP, TCP_PORT, do_log_raw_data
     rospy.init_node('a50_pub', anonymous=False)
-    TCP_IP = rospy.get_param("~ip", "192.168.2.11")
+    TCP_IP = rospy.get_param("~ip", "192.168.2.95")
     TCP_PORT = rospy.get_param("~port", 16171)
     do_log_raw_data = rospy.get_param("~do_log_raw_data", False)
     connect()
